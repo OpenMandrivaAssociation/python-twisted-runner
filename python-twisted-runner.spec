@@ -6,6 +6,7 @@ Source0:        http://tmrc.mit.edu/mirror/twisted/Runner/0.1/TwistedRunner-%{ve
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/projects/runner/
+BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:  python-devel python-twisted-core
 Requires:       python-twisted-core
 
