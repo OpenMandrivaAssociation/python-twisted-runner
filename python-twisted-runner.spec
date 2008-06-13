@@ -1,11 +1,14 @@
+%define version 8.0.0
+%define rel 1
+
 Summary:        Runner has process management, including an inetd replacement for Twisted
 Name:           python-twisted-runner
-Version:        0.2.0
-Release: %mkrel 1
-Source0:        http://tmrc.mit.edu/mirror/twisted/Runner/0.1/TwistedRunner-%{version}.tar.bz2
+Version:        %version
+Release: %mkrel %rel
+Source0:        http://tmrc.mit.edu/mirror/twisted/Runner/8.0/TwistedRunner-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
-URL:            http://twistedmatrix.com/projects/runner/
+URL:            http://twistedmatrix.com/trac/wiki/TwistedRunner
 BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:  python-devel python-twisted-core
 Requires:       python-twisted-core
