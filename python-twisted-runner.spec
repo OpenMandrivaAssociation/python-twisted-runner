@@ -1,5 +1,5 @@
 %define version 8.0.0
-%define rel 1
+%define rel 2
 
 Summary:        Runner has process management, including an inetd replacement for Twisted
 Name:           python-twisted-runner
