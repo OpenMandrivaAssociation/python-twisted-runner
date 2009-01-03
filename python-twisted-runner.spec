@@ -1,5 +1,5 @@
-%define version 8.0.0
-%define rel 2
+%define version 8.2.0
+%define rel 1
 
 Summary:        Runner has process management, including an inetd replacement for Twisted
 Name:           python-twisted-runner
@@ -31,7 +31,7 @@ Runner has process management, including an inetd replacement for Twisted.
 
 %files
 %defattr(0644,root,root,0755)
-%doc LICENSE README 
+%doc LICENSE README
 %dir %py_platsitedir/twisted/runner
 %py_platsitedir/twisted/runner/*
 %py_platsitedir/*.egg-info
