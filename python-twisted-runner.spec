@@ -1,11 +1,12 @@
-%define version 8.2.0
+%define version 9.0.0
 %define rel 1
+%define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        Runner has process management, including an inetd replacement for Twisted
 Name:           python-twisted-runner
 Version:        %version
 Release: %mkrel %rel
-Source0:        http://tmrc.mit.edu/mirror/twisted/Runner/8.0/TwistedRunner-%{version}.tar.bz2
+Source0:        http://tmrc.mit.edu/mirror/twisted/Runner/%{mainver}/TwistedRunner-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedRunner
