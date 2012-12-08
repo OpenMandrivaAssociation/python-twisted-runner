@@ -1,6 +1,6 @@
 %define name python-twisted-runner
-%define version 10.1.0
-%define rel 3
+%define version 12.2.0
+%define rel 1
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        Runner has process management, including an inetd replacement for Twisted
@@ -11,7 +11,6 @@ Source0:        http://tmrc.mit.edu/mirror/twisted/Runner/%{mainver}/TwistedRunn
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedRunner
-BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:  python-devel python-twisted-core
 Requires:       python-twisted-core
 
@@ -25,11 +24,7 @@ Runner has process management, including an inetd replacement for Twisted.
 %__python setup.py build
 
 %install
-%__rm -rf %{buildroot}
 %__python setup.py install --root=%{buildroot} --install-purelib=%{py_platsitedir}
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
@@ -38,4 +33,3 @@ Runner has process management, including an inetd replacement for Twisted.
 %py_platsitedir/twisted/runner/*
 %py_platsitedir/twisted/plugins/*
 %py_platsitedir/*.egg-info
-
