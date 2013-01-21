@@ -3,6 +3,8 @@
 %define rel 1
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
+%define debug_package %{nil}
+
 Summary:        Runner has process management, including an inetd replacement for Twisted
 Name:           %{name}
 Version:        %{version}
