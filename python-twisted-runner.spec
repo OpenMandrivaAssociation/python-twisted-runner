@@ -1,15 +1,12 @@
-%define name python-twisted-runner
-%define version 12.2.0
-%define rel 1
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 %define debug_package %{nil}
 
 Summary:        Runner has process management, including an inetd replacement for Twisted
-Name:           %{name}
-Version:        %{version}
-Release:	%mkrel %{rel}
-Source0:        http://tmrc.mit.edu/mirror/twisted/Runner/%{mainver}/TwistedRunner-%{version}.tar.bz2
+Name:           python-twisted-runner
+Version:        13.0.0
+Release:	1
+Source0:        http://twistedmatrix.com/Releases/Runner/13.0/TwistedRunner-13.0.0.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedRunner
