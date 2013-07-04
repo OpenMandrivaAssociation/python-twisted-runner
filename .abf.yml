@@ -1,5 +1,4 @@
 removed_sources:
-  TwistedRunner-10.1.0.tar.bz2: e124b611d06541f871e7095fc258d197a742014b
-  TwistedRunner-12.2.0.tar.bz2: 6d2405c454d3fec6b0fd17264145e915c41fb176
-sources:
   TwistedRunner-13.0.0.tar.bz2: e5aa562604294135afe7c1b4e90e9cb99b42b0eb
+sources:
+  TwistedRunner-13.1.0.tar.bz2: 026f5584ad7939d4ebadfc44691e85d26e1afdc2

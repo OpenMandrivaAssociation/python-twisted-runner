@@ -1,0 +1,10 @@
+--- TwistedRunner-13.1.0/setup.py.0000~	2011-02-14 05:45:15.000000000 +0100
++++ TwistedRunner-13.1.0/setup.py	2013-07-05 00:49:57.982483741 +0200
+@@ -11,6 +11,7 @@ except ImportError:
+ extensions = [
+     Extension("twisted.runner.portmap",
+               ["twisted/runner/portmap.c"],
++              libraries=['tirpc'],
+               condition=lambda builder: builder._check_header("rpc/rpc.h")),
+ ]
+ 
