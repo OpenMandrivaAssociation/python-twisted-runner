@@ -5,7 +5,7 @@
 Summary:	Runner has process management, including an inetd replacement for Twisted
 Name:		python-twisted-runner
 Version:	13.1.0
-Release:	4
+Release:	5
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/trac/wiki/TwistedRunner
