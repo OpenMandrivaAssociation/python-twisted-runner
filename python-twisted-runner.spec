@@ -11,6 +11,7 @@ License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/trac/wiki/TwistedRunner
 Source0:	http://twistedmatrix.com/Releases/Runner/13.2/TwistedRunner-%{version}.tar.bz2
+Source100: %{name}.rpmlintrc
 Patch0:		TwistedRunner-13.1.0-tirpc.patch
 BuildRequires:	python-twisted-core
 BuildRequires:	pkgconfig(python)
