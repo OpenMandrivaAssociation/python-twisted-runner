@@ -22,7 +22,7 @@ Runner has process management, including an inetd replacement for Twisted.
 
 %prep
 %setup -qn TwistedRunner-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 %__python setup.py build
