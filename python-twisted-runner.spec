@@ -9,7 +9,7 @@ Version:	13.2.0
 Release:	2
 License:	MIT
 Group:		Development/Python
-Url:		http://twistedmatrix.com/trac/wiki/TwistedRunner
+Url:		https://twistedmatrix.com/trac/wiki/TwistedRunner
 Source0:	http://twistedmatrix.com/Releases/Runner/13.2/TwistedRunner-%{version}.tar.bz2
 Source100: %{name}.rpmlintrc
 Patch0:		TwistedRunner-13.1.0-tirpc.patch
